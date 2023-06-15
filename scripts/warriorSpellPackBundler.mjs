@@ -6,8 +6,8 @@ dotenv.config();
 (async () => {
     const sdk = ThirdwebSDK.fromPrivateKey(process.env.PRIVATE_KEY, "mumbai");
 
-    const packAddress = "0x74476e7f180599310eF9FBFf4dEDaFe851Bd9E54";
-    const cardAddress = "0xD18274c7F16B9FcAD5637a363D8b2BC4b0d8C9dB";
+    const packAddress = "0xAa07fB86C92e43972CE9E417C6ED85e6508C21b8";
+    const cardAddress = "0xe37d80769255720BA96942AD5bb173d5766567dd";
 
     const pack = sdk.getContract(packAddress, "pack");
     const card = sdk.getContract(cardAddress, "edition");
@@ -20,39 +20,39 @@ dotenv.config();
     console.log("Creating pack!");
     const createPacks = (await pack).create({
         packMetadata: {
-            name: "Warrior Spell Pack",
+            name: "WARRIOR SPELL PACK",
             image: packImage
         },
         erc1155Rewards: [
             {
                 contractAddress: cardAddress,
-                tokenId: 0,
+                tokenId: 11,
                 quantityPerReward: 1,
                 totalRewards: 10
             },
             {
                 contractAddress: cardAddress,
-                tokenId: 1,
+                tokenId: 12,
                 quantityPerReward: 1,
-                totalRewards: 30
+                totalRewards: 20
             },
             {
                 contractAddress: cardAddress,
-                tokenId: 2,
+                tokenId: 13,
                 quantityPerReward: 1,
-                totalRewards: 30
+                totalRewards: 20
             },
             {
                 contractAddress: cardAddress,
-                tokenId: 3,
+                tokenId: 14,
                 quantityPerReward: 1,
-                totalRewards: 10
+                totalRewards: 500
             },
             {
                 contractAddress: cardAddress,
-                tokenId: 4,
+                tokenId: 15,
                 quantityPerReward: 1,
-                totalRewards: 5
+                totalRewards: 20
             }
         ],
         rewardsPerPack: 5

@@ -18,14 +18,14 @@ export default function Navbar() {
         <div className={styles.container}>
             <div className={styles.navbar}>
                 <Link href="/">
-                    <p>Creatures</p>
+                    <p><b>TRADING CARDS GAME</b></p>
                 </Link>
                 <div className={styles.navLinks}>
                     <Link href="/shop">
-                        <p>Shop</p>
+                        <p><b>Shop</b></p>
                     </Link>
                     <Link href="/marketplace">
-                        <p>Marketplace</p>
+                        <p><b>Marketplace</b></p>
                     </Link>
                 </div>
                 <div>
