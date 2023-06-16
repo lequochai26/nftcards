@@ -6,8 +6,8 @@ const Home: NextPage = () => {
     <div className={styles.container}>
         <div className={styles.heroPage}>
           <div className={styles.heroSection}>
-            <h1>Start Collecting Now!</h1>
-            <p>Buy and open packs to collect creatures. Collect common, rare, and ultra rare cards.</p>
+            <h1>FIND YOUR FAVORITE CARDS NOW!</h1>
+            <p>BUY AND OPEN PACKS TO COLLECT YOUR FAVORITE CARDS</p>
             <button 
               className={styles.heroButton}
               onClick={() => window.location.href = "/shop"}
